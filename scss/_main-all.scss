@@ -1,0 +1,17 @@
+.main {
+	&__video {
+		margin-bottom: 56px;
+	}
+	&__bouteille {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 50%);
+		display: block;
+		width: 46px;
+		height: 68px;
+	}
+	&__programs {
+		margin-bottom: 24px;
+	}
+}
