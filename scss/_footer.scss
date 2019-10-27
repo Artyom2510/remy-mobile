@@ -1,0 +1,53 @@
+.footer {
+	padding: 24px 24px 36px;
+	font-family: "Gotham Pro", sans-serif;
+	&__soc {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 32px;
+	}
+	&__soc-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		&:first-child {
+			margin-right: 36px;
+		}
+		img, svg {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+		}
+	}
+	&__block-links {
+		display: block;
+		text-align: center;
+	}
+	&__site {
+		display: inline-block;
+		margin-bottom: 32px;
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $greyText;
+		text-decoration: none;
+		&:hover, &:focus, &:active {
+			color: $greyText;
+			text-decoration: none;
+		}
+	}
+	&__privacy-policy {
+		display: block;
+		color: $greyText;
+		font-size: 12px;
+		line-height: 20px;
+		text-decoration: none;
+		&:hover, &:focus, &:active {
+			color: $greyText;
+			text-decoration: none;
+		}
+	}
+}

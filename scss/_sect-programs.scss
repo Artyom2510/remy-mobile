@@ -1,34 +1,7 @@
 .programs {
+	padding-bottom: 24px;
 	&__wrap {
-		position: relative;
-		&::before {
-			content: "";
-			float: left;
-			padding-bottom: 56.25%;
-		}
-		&::after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-	}
-	&__title {
-		position: absolute;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, 50%);
-		display: block;
-		font-size: 20px;
-		line-height: 24px;
-		font-weight: 700;
-		letter-spacing: 1.8px;
-		text-transform: uppercase;
-		color: #fff;
-	}
-	&__image {
-		display: block;
-		width: 100%;
-		min-height: 160px;
+		margin-bottom: 24px;
 	}
 }
 
@@ -41,15 +14,15 @@
 		display: block;
 		min-width: 242px;
 		&:last-child {
+			min-width: calc(242px + 24px);
 			margin-right: 0;
+			padding-right: 24px;
 		}
 	}
 	&__programs-date {
 		display: block;
 		margin-top: 0;
 		margin-bottom: 16px;
-		font-size: 20px;
-		line-height: 24px;
 		color: $darkText;
 	}
 }
@@ -63,11 +36,6 @@
 		display: block;
 		margin-top: 0;
 		margin-bottom: 8px;
-		text-transform: uppercase;
-		color: #fff;
-		font-weight: 500;
-		font-size: 12px;
-		line-height: 16px;
 	}
 	&__block-photos {
 		display: flex;
@@ -90,6 +58,7 @@
 		font-size: 10px;
 		line-height: 1.45;
 		color: #fff;
+		text-transform: uppercase;
 	}
 	&__content {
 		display: block;
@@ -105,18 +74,6 @@
 	}
 	&__more-info {
 		display: block;
-		width: 167px;
-		height: 34px;
-		padding: 0;
 		margin: 0 auto;
-		background-color: transparent;
-		border: none;
-		outline: none !important;
-		font-size: 13px;
-		font-weight: 500;
-		line-height: 1.57;
-		letter-spacing: 1.24px;
-		color: $btnNormal;
-		text-transform: uppercase;
 	}
 }

@@ -19,8 +19,12 @@
 	&__burger {
 		span {
 			position: relative;
-			display: block;
+			display: inline-block;
 			width: 22px;
+			height: 3px;
+			border-radius: 4px;
+			background-color: transparent;
+			transition: background-color .2s ease, transform .5s ease;
 			&::before,
 			&::after {
 				content: "";
@@ -30,19 +34,33 @@
 				height: 3px;
 				border-radius: 4px;
 				background-color: $btnNormal;
+				transition: all .5s ease;
 			}
 			&::before {
 				width: 22px;
-				top: 5px;
+				top: -3px;
 			}
 			&::after {
 				width: 14px;
-				top: -3px;
+				top: 6px;
 			}
-			&.open {
+		}
+		&.open {
+			span {
+				transform: rotate(135deg);
+				background-color: $btnNormal;
+				&::before,
+				&::after {
+					top: 0;
+					width: 11px;
+				}
 				&::before {
+					transform-origin: right;
+					transform: rotate(-90deg);
 				}
 				&::after {
+					transform-origin: left;
+					transform: translateX(100%) rotate(-90deg);
 				}
 			}
 		}
