@@ -95,6 +95,7 @@ section {
 }
 
 .regitstration__title {
+	display: none;
 	margin: 0;
 	text-align: center;
 	opacity: 0;
@@ -117,7 +118,15 @@ section {
 
 .regitstration__desc {
 	display: none;
-	opacity: 0;
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: opacity .3s ease-in, -webkit-transform .25s ease-in;
+	transition: opacity .3s ease-in, -webkit-transform .25s ease-in;
+	-o-transition: opacity .3s ease-in, transform .25s ease-in;
+	transition: opacity .3s ease-in, transform .25s ease-in;
+	transition: opacity .3s ease-in, transform .25s ease-in, -webkit-transform .25s ease-in;
 }
 
 .regitstration__desc p {
@@ -134,8 +143,11 @@ section {
 	display: block;
 }
 
-.regitstration__desc.visible {
-	opacity: 1;
+.regitstration__desc.transform-down {
+	-webkit-transform: translateY(25%);
+	-ms-transform: translateY(25%);
+	transform: translateY(25%);
+	opacity: 0;
 }
 
 .regitstration__wrap {
@@ -155,18 +167,26 @@ section {
 	display: block;
 }
 
-.regitstration__wrap_transform {
+.regitstration__wrap.transform-down {
+	-webkit-transform: translateY(25%);
+	-ms-transform: translateY(25%);
+	transform: translateY(25%);
+	opacity: 0;
+}
+
+.regitstration__wrap.transform-up {
 	-webkit-transform: translateY(-25%);
 	-ms-transform: translateY(-25%);
 	transform: translateY(-25%);
 	opacity: 0;
 }
 
-.regitstration__wrap_transform-start {
-	-webkit-transform: translateY(25%);
-	-ms-transform: translateY(25%);
-	transform: translateY(25%);
-	opacity: 0;
+.regitstration__input-row {
+	display: none;
+}
+
+.regitstration__input-row.display {
+	display: block;
 }
 
 .regitstration__input-name, .regitstration__input-email, .regitstration__input-tel {
@@ -185,6 +205,11 @@ section {
 
 .regitstration__btn:last-child {
 	margin-top: 16px;
+}
+
+.regitstration__btn.disabled {
+	cursor: not-allowed;
+	opacity: .5;
 }
 
 .regitstration__formcheck {
@@ -376,6 +401,10 @@ section {
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #221e1f;
+}
+
+.main {
+	position: relative;
 }
 
 .main__video {
@@ -1126,6 +1155,14 @@ h4 {
 	margin-bottom: 16px;
 }
 
+.popup-lk__registr-row-11 {
+	display: none;
+}
+
+.popup-lk__registr-row-11.display {
+	display: block;
+}
+
 .popup-lk__title {
 	margin-bottom: 24px;
 }
@@ -1170,7 +1207,11 @@ h4 {
 	position: fixed;
 	z-index: 4;
 	bottom: 0;
+	bottom: -100vh;
 	left: 0;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
 	display: none;
 	-webkit-box-align: center;
 	-webkit-align-items: center;

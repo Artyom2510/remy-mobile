@@ -40,22 +40,21 @@
 				<h4 class="regitstration__title title-1 visible display">Подтвердите, что вам больше 18, чтобы продолжить</h4>
 				<h4 class="regitstration__title title-2">Введите персональный код приглашения</h4>
 				<h4 class="regitstration__title regitstration__title_last title-3">Приветствуем вас!</h4>
-				<div class="regitstration__desc">
+				<div class="regitstration__desc transform-down">
 					<p>Будем рады видеть вас на одной из вечеринок La Maison Rémy Martin в рамках международной кампании Team Up For Excellence. Для того, чтобы стать частью команды, необходимо зарегистрироваться:</p>
 				</div>
 				<div class="regitstration__wrap regitstration__wrap_1 display">
-					<button class="regitstration__btn btn btn_fill js-click-anim">Да, мне больше 18</button>
+					<button class="regitstration__btn btn btn_fill js-click-18">Да, мне больше 18</button>
 					<button class="regitstration__btn btn btn_border">Нет, мне еще нет 18</button>
 				</div>
-				<div class="regitstration__wrap regitstration__wrap_2 regitstration__wrap_transform-start">
+				<div class="regitstration__wrap regitstration__wrap_2 transform-down">
 					<div class="formfield regitstration__input-code">
 						<input class="formfield__input" name="code" placeholder="Введите код" value="">
 					</div>
 					<button class="regitstration__btn btn btn_fill js-confirm">Подтвердить</button>
 				</div>
-				<!-- Не нужны, это для жикури regitstration__wrap_1 и regitstration__wrap_2 -->
-				<!-- <div class="regitstration__wrap regitstration__wrap_2 display">
-					<div class="regitstration__input-row">
+				<div class="regitstration__wrap regitstration__wrap_3 transform-down">
+					<div class="regitstration__input-row display">
 						<div class="formfield regitstration__input-name">
 							<input class="formfield__input" name="guest[name]" type="text" placeholder="Фамилия и имя" value="">
 						</div>
@@ -66,8 +65,7 @@
 							<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 						</div>
 					</div>
-					<button class="regitstration__btn btn btn_fill">Добавить +1</button> -->
-					<!-- <div class="regitstration__input-row">
+					<div class="regitstration__input-row regitstration__input-row-2">
 						<h2 class="regitstration__plus">+1</h2>
 						<div class="formfield regitstration__input-name">
 							<input class="formfield__input" name="guest[name]" type="text" placeholder="Фамилия и имя" value="">
@@ -78,35 +76,29 @@
 						<div class="formfield regitstration__input-tel">
 							<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 						</div>
-					</div> -->
-					<!-- <div class="regitstration__formcheck formcheck">
-						<input id="politconf" type="checkbox" class="formcheck__input" checked="checked">
+					</div>
+					<button class="regitstration__btn btn btn_fill js-plus-1">Добавить +1</button>
+					<div class="regitstration__formcheck formcheck">
+						<input id="politconf" type="checkbox" class="formcheck__input js-check" checked="checked">
 						<label for="politconf" class="formcheck__label">Согласен с 
 							<a href="/" target="_blank">политикой хранения и обработки персональных данных</a>
 						</label>
 					</div>
-					<button class="js-reg regitstration__btn btn btn_border">Зарегистрироваться</button> -->
+					<button class="js-reg regitstration__btn btn btn_border">Зарегистрироваться</button>
 				</div>
+			</div>
 
 		</div>
 
 		<div class="page__main">
 
-			<!-- notice_exist Для показа -->
-			<div class="notice">
-				<span class="notice__text">Для завершения регистрации нужно выбрать один из дней</span>
-				<button class="notice__close">
-					<img src="" alt="">
-				</button>
-			</div>
-
 			<header class="header">
 				<ul class="header__menu header-menu js-burger-menu">
 					<li class="header-menu__item">
-						<a href="#">Программа</a>
+						<a href="#" class="scroll-prog">Программа</a>
 					</li>
 					<li class="header-menu__item">
-						<button>Локация</button>
+						<button class="scroll-loc">Локация</button>
 					</li>
 				</ul>
 				<button class="header__burger js-btn-burger">
@@ -119,6 +111,14 @@
 			</header>
 		
 			<main class="main">
+
+			<!-- notice_exist Для показа -->
+				<div class="notice">
+					<span class="notice__text">Для завершения регистрации нужно выбрать один из дней</span>
+					<button class="notice__close">
+						<img src="" alt="">
+					</button>
+				</div>
 		
 				<section class="main__video">
 					<div class="main-video">
@@ -297,8 +297,9 @@
 					<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 				</div>
 			</div>
-			<!-- <h2 class="popup-lk__plus">+1</h2>
-			<div class="popup-lk__registr-row">
+			<button type="button" class="popup-lk__add btn btn_border js-plus-11">Добавить +1</button>
+			<div class="popup-lk__registr-row popup-lk__registr-row-11">
+				<h2 class="popup-lk__plus">+1</h2>
 				<div class="formfield popup-lk__input-name">
 					<input class="formfield__input" name="guest[name]" type="text" placeholder="Фамилия и имя" value="">
 				</div>
@@ -308,8 +309,7 @@
 				<div class="formfield popup-lk__input-tel">
 					<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 				</div>
-			</div> -->
-			<button type="button" class="popup-lk__add btn btn_border">Добавить +1</button>
+			</div>
 			<!-- <button type="button" class="popup-lk__add btn btn_border">Удалить</button> -->
 		</div>
 		<div class="popup-lk__bottom">

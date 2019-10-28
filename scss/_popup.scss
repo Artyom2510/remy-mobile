@@ -91,6 +91,12 @@
 	&__registr-row {
 		margin-bottom: 16px;
 	}
+	&__registr-row-11 {
+		display: none;
+		&.display {
+			display: block;
+		}
+	}
 	&__title {
 		margin-bottom: 24px;
 	}

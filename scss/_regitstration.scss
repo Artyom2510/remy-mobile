@@ -14,6 +14,7 @@
 		margin: 0 auto;
 	}
 	&__title {
+		display: none;
 		margin: 0;
 		text-align: center;
 		opacity: 0;
@@ -30,7 +31,9 @@
 	}
 	&__desc {
 		display: none;
-		opacity: 0;
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity .3s ease-in, transform .25s ease-in;
 		p {
 			display: block;
 			margin-top: 16px;
@@ -43,8 +46,9 @@
 		&.display {
 			display: block;
 		}
-		&.visible {
-			opacity: 1;
+		&.transform-down {
+			transform: translateY(25%);
+			opacity: 0;
 		}
 	}
 	&__wrap {
@@ -55,13 +59,19 @@
 		&.display {
 			display: block;
 		}
-		&_transform {
+		&.transform-down {
+			transform: translateY(25%);
+			opacity: 0;
+		}
+		&.transform-up {
 			transform: translateY(-25%);
 			opacity: 0;
 		}
-		&_transform-start {
-			transform: translateY(25%);
-			opacity: 0;
+	}
+	&__input-row {
+		display: none;
+		&.display {
+			display: block;
 		}
 	}
 	&__input-name,
@@ -78,6 +88,10 @@
 		width: 100%;
 		&:last-child{
 			margin-top: 16px;
+		}
+		&.disabled {
+			cursor: not-allowed;
+			opacity: .5;
 		}
 	}
 	&__formcheck {

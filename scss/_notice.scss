@@ -2,7 +2,9 @@
 	position: fixed;
 	z-index: 4;
 	bottom: 0;
+	bottom: -100vh;
 	left: 0;
+	transform: translateY(100%);
 	display: none;
 	align-items: center;
 	justify-content: space-between;
