@@ -65,5 +65,11 @@
 			border-right: 1px solid #fff;
 			transform: rotate(45deg);
 		}
+		&_open {
+			&::after {
+				top: 8px;
+				transform: rotate(225deg);
+			}
+		}
 	}
 }

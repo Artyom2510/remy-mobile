@@ -1,0 +1,19 @@
+.page {
+	$p: &;
+	display: block;
+	height: 100vh;
+	overflow: hidden;
+	transition: transform .3s ease-in;
+	&_transform {
+		overflow: visible;
+		transform: translateY(-100vh);
+	}
+	&__regitstration {
+		position: relative;
+		height: 100vh;
+		overflow-y: scroll;
+	}
+	&__main {
+		display: block;
+	}
+}

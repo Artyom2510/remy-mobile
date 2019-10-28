@@ -1,0 +1,78 @@
+.regitstration {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 100vh;
+	padding: 24px 16px 90px;
+	background-color: $darkText;
+	transition: all .3s ease;
+	&__logo {
+		display: block;
+		width: 220px;
+		height: auto;
+		margin: 0 auto;
+	}
+	&__title {
+		margin: 0;
+		text-align: center;
+		opacity: 0;
+		transition: opacity .3s ease-in;
+		&_visible {
+			opacity: 1;
+		}
+		&_last {
+			margin-top: 90px;
+		}
+	}
+	&__desc {
+		p {
+			display: block;
+			margin-top: 16px;
+			margin-bottom: 24px;
+			font-size: 12px;
+			line-height: 1.45;
+			text-align: center;
+			color: #fff;
+		}
+	}
+	&__wrap {
+		display: none;
+		opacity: 1;
+		transform: translateY(0);
+		transition: opacity .3s ease-in, transform .25s ease-in;
+		&.display {
+			display: block;
+		}
+		&_transform {
+			transform: translateY(-25%);
+			opacity: 0;
+		}
+		&_transform-start {
+			transform: translateY(25%);
+			opacity: 0;
+		}
+	}
+	&__input-name,
+	&__input-email,
+	&__input-tel {
+		width: 100%;
+		margin-bottom: 16px;
+	}
+	&__plus {
+		margin-top: 8px;
+		margin-bottom: 16px;
+	}
+	&__btn {
+		width: 100%;
+		&:last-child{
+			margin-top: 16px;
+		}
+	}
+	&__formcheck {
+		margin: 48px 0 24px;
+	}
+	&__input-code {
+		width: 100%;
+	}
+}

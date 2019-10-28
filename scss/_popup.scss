@@ -2,20 +2,26 @@
 	position: fixed;
 	left: 0;
 	top: 0;
+	transform: translateY(-100vh);
 	display: none;
 	opacity: 0;
 	z-index: 5;
 	width: 100%;
 	height: 100vh;
-	padding: 16px 16px 24px;
+	padding: 16px 16px 90px;
 	overflow-y: scroll;
-	background-color: rgba(34, 30, 31, .9);
-	transition: opacity .3s ease;
+	background-color: $darkText;
+	transition: all .3s ease;
 	&.display {
 		display: block;
 	}
+	&_visible {
+		transform: translateY(0);
+		opacity: 1;
+	}
 	&.visible {
 		opacity: 1;
+		transform: translateY(0);
 	}
 	&_sb {
 		&.display {
@@ -24,8 +30,8 @@
 			justify-content: space-between;
 		}
 	}
-	&_fill-bg {
-		background-color: $darkText;
+	&_transparence {
+		background-color: rgba(34, 30, 31, .9);
 	}
 	&__confirm {
 		margin: 0;
@@ -39,26 +45,6 @@
 		display: inline-block;
 		width: calc(100% - 24px);
 		height: auto;
-	}
-}
-.popup-age {
-	background-color: $darkText;
-	&__logo {
-		display: block;
-		margin: 0 auto;
-	}
-	&__title {
-		margin-top: 0;
-		margin-bottom: 24px;
-	}
-	&__btn-block {
-		display: block;
-	}
-	&__btn {
-		width: 100%;
-		&:last-child{
-			margin-top: 16px;
-		}
 	}
 }
 .popup-program {

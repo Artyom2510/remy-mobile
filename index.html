@@ -27,165 +27,236 @@
 
 <body>
 
-	<header class="header">
-		<ul class="header__menu header-menu js-burger-menu">
-			<li class="header-menu__item">
-				<a href="#">Программа</a>
-			</li>
-			<li class="header-menu__item">
-				<button>Локация</button>
-			</li>
-		</ul>
-		<button class="header__burger js-btn-burger">
-			<span></span>
-		</button>
-		<img src="img/logo.svg" alt="Remy Martin" class="header__logo">
-		<button class="header__profile js-tgl-lk">
-			<img src="img/profile.svg" alt="">
-		</button>
-	</header>
+	<div class="page">
 
-	<main class="main">
-
-		<section class="main__video">
-			<div class="main-video">
-				<div class="main-video__wrap">
-					<video class="main-video__video">
-						<source src="video/remy_main.mp4" type="video/mp4;">
-					</video>
+		<div class="page__regitstration">
+			<div class="regitstration">
+				<img src="img/logo-1.png" alt="Remy Martin" alt="" class="regitstration__logo">
+				<h4 class="regitstration__title regitstration__title_last regitstration__title_visible">Приветствуем вас!</h4>
+				<div class="regitstration__desc">
+					<p>Будем рады видеть вас на одной из вечеринок La Maison Rémy Martin в рамках международной кампании Team Up For Excellence. Для того, чтобы стать частью команды, необходимо зарегистрироваться:</p>
 				</div>
-				<img src="img/main/title.svg" alt="Team up for excellence" class="main-video__title">
-				<hr class="main-video__bottom-line">
-			</div>
-			<img src="img/main/bouteille.png" srcset="img/main/bouteille.png 1x, img/main/bouteille@2x.png 2x, img/main/bouteille@3x.png 3x" alt="Remy Martin XO" class="main__bouteille">
-		</section>
-
-		<section class="main__manifest">
-			<div class="manifest">
-				<div class="manifest__wrap manifest-img">
-					<img src="img/main/manifest.jpg" srcset="img/main/manifest.jpg 1x, img/main/manifest@2x.jpg 2x, img/main/manifest@3x.jpg 3x" alt="Manifest" class="manifest-img__image">
-					<button class="manifest-img__title js-manifest-btn">Манифест</button>
+				<!-- <h4 class="regitstration__title regitstration__title_visible">Подтвердите, что вам больше 18, чтобы продолжить</h4> -->
+				<!-- <h4 class="popup-age__title">Введите персональный код приглашения</h4> -->
+				<!-- <div class="regitstration__wrap regitstration__wrap_1 display">
+					<button class="regitstration__btn btn btn_fill js-click-anim">Да, мне больше 18</button>
+					<button class="regitstration__btn btn btn_border">Нет, мне еще нет 18</button>
 				</div>
-				<div class="manifest__hidden-block js-manifest-hidden">
-					<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес. Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес. Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="main__programs">
-			<div class="programs">
-				<div class="programs__wrap image-wrap">
-					<img src="img/days/main.jpg" srcset="img/days/main.jpg 1x, img/days/main@2x.jpg 2x, img/days/main@3x.jpg 3x" alt="Manifest" class="image-wrap__img">
-					<h2 class="image-wrap__title">Программа</h2>
-				</div>
-				<div class="programs__slider slider">
-					<div class="slider__item">
-						<h2 class="slider__programs-date">20 ноября</h2>
-						<div class="programs-card">
-							<h4 class="programs-card__title">День 1</h4>
-							<div class="programs-card__block-photos">
-								<div class="programs-card__prew">
-									<img src="img/days/day-1-1.jpg" alt="" class="programs-card__img">
-									<span class="programs-card__name">Нагиев</span>
-								</div>
-								<div class="programs-card__prew">
-									<img src="img/days/day-1-2.jpg" alt="" class="programs-card__img">
-									<span class="programs-card__name">Леван горозия</span>
-								</div>
-							</div>
-							<div class="programs-card__content">
-								<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
-							</div>
-							<button class="programs-card__more-info btn-small js-tgl-program">Подробнее</button>
+				<div class="regitstration__wrap regitstration__wrap_2 regitstration__wrap_transform-start">
+					<div class="formfield regitstration__input-code">
+						<input class="formfield__input" name="code" placeholder="Введите код" value="">
+					</div>
+					<button class="regitstration__btn btn btn_fill">Подтвердить</button>
+				</div> -->
+				<!-- Не нужны, это для жикури regitstration__wrap_1 и regitstration__wrap_2 -->
+				<div class="regitstration__wrap regitstration__wrap_2 display">
+					<div class="regitstration__input-row">
+						<div class="formfield regitstration__input-name">
+							<input class="formfield__input" name="guest[name]" type="text" placeholder="Фамилия и имя" value="">
+						</div>
+						<div class="formfield regitstration__input-email">
+							<input class="formfield__input" name="guest[email]" type="email" placeholder="Email" value="">
+						</div>
+						<div class="formfield regitstration__input-tel">
+							<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 						</div>
 					</div>
-					<div class="slider__item">
-						<h2 class="slider__programs-date">21 ноября</h2>
-						<div class="programs-card">
-							<h4 class="programs-card__title">День 2</h4>
-							<div class="programs-card__block-photos">
-								<div class="programs-card__prew">
-									<img src="img/days/day-1-1.jpg" alt="" class="programs-card__img">
-									<span class="programs-card__name">Нагиев</span>
-								</div>
-								<div class="programs-card__prew">
-									<img src="img/days/day-1-2.jpg" alt="" class="programs-card__img">
-									<span class="programs-card__name">Леван горозия</span>
-								</div>
-							</div>
-							<div class="programs-card__content">
-								<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
-							</div>
-							<button class="programs-card__more-info btn-small js-tgl-program">Подробнее</button>
+					<button class="regitstration__btn btn btn_fill">Добавить +1</button>
+					<!-- <div class="regitstration__input-row">
+						<h2 class="regitstration__plus">+1</h2>
+						<div class="formfield regitstration__input-name">
+							<input class="formfield__input" name="guest[name]" type="text" placeholder="Фамилия и имя" value="">
 						</div>
-					</div>
-					<div class="slider__item">
-						<h2 class="slider__programs-date">22 ноября</h2>
-						<div class="programs-card">
-							<h4 class="programs-card__title">День 3</h4>
-							<div class="programs-card__block-photos">
-								<div class="programs-card__prew">
-									<img src="img/days/day-1-1.jpg" alt="" class="programs-card__img">
-									<span class="programs-card__name">Нагиев</span>
-								</div>
-								<div class="programs-card__prew">
-									<img src="img/days/day-1-2.jpg" alt="" class="programs-card__img">
-									<span class="programs-card__name">Леван горозия</span>
-								</div>
-							</div>
-							<div class="programs-card__content">
-								<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
-							</div>
-							<button class="programs-card__more-info btn-small js-tgl-program">Подробнее</button>
+						<div class="formfield regitstration__input-email">
+							<input class="formfield__input" name="guest[email]" type="email" placeholder="Email" value="">
 						</div>
+						<div class="formfield regitstration__input-tel">
+							<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
+						</div>
+					</div> -->
+					<div class="regitstration__formcheck formcheck">
+						<input id="politconf" type="checkbox" class="formcheck__input" checked="checked">
+						<label for="politconf" class="formcheck__label">Согласен с 
+							<a href="/" target="_blank">политикой хранения и обработки персональных данных</a>
+						</label>
 					</div>
+					<button class="js-reg regitstration__btn btn btn_border">Зарегистрироваться</button>
 				</div>
 			</div>
-		</section>
 
-		<section class="main__location">
-			<div class="location">
-				<div class="location__wrap image-wrap">
-					<img src="img/contacts/main.jpg" alt="Location" class="image-wrap__img">
-					<h2 class="image-wrap__title">Локация</h2>
-				</div>
-				<div class="location__locality locality">
-					<div class="locality__child">
-						<img src="img/contacts/map-adress.svg" alt="" class="locality__svg">
-						<address class="locality__addr">г. Москва, улица Мосфильмовская</address>
-					</div>
-					<div class="locality__child">
-						<img src="img/contacts/map-house.svg" alt="" class="locality__svg">
-						<address class="locality__addr">Дом 8</address>
-					</div>
-					<div class="locality__child">
-						<img src="img/contacts/map-place.svg" alt="" class="locality__svg">
-						<address class="locality__addr">Панорамная площадка Panoramic</address>
-					</div>
-				</div>
-			</div>
-			<div class="location__map" id="map"></div>
-		</section>
-
-	</main>
-
-	<footer class="footer">
-		<div class="footer__soc">
-			<a href="/" target="_blank" class="footer__soc-link">
-				<img src="img/contacts/fb.svg" alt="">
-			</a>
-			<a href="/" target="_blank" class="footer__soc-link">
-				<img src="img/contacts/insta.svg" alt="">
-			</a>
 		</div>
-		<div class="footer__block-links">
-			<a href="/" class="footer__site" target="_blank">remymartin.com</a>
-			<a href="/" class="footer__privacy-policy">Политика хранения и обработки персональных данных</a>
+
+		<div class="page__main">
+
+			<!-- notice_exist Для показа -->
+			<div class="notice">
+				<span class="notice__text">Для завершения регистрации нужно выбрать один из дней</span>
+				<button class="notice__close">
+					<img src="" alt="">
+				</button>
+			</div>
+
+			<header class="header">
+				<ul class="header__menu header-menu js-burger-menu">
+					<li class="header-menu__item">
+						<a href="#">Программа</a>
+					</li>
+					<li class="header-menu__item">
+						<button>Локация</button>
+					</li>
+				</ul>
+				<button class="header__burger js-btn-burger">
+					<span></span>
+				</button>
+				<img src="img/logo.svg" alt="Remy Martin" class="header__logo">
+				<button class="header__profile js-tgl-lk">
+					<img src="img/profile.svg" alt="">
+				</button>
+			</header>
+		
+			<main class="main">
+		
+				<section class="main__video">
+					<div class="main-video">
+						<div class="main-video__wrap">
+							<video class="main-video__video" controls autoplay muted>
+								<source src="video/remy_main.mp4" type="video/mp4;">
+							</video>
+						</div>
+						<img src="img/main/title.svg" alt="Team up for excellence" class="main-video__title">
+						<hr class="main-video__bottom-line">
+					</div>
+					<img src="img/main/bouteille.png" srcset="img/main/bouteille.png 1x, img/main/bouteille@2x.png 2x, img/main/bouteille@3x.png 3x" alt="Remy Martin XO" class="main__bouteille">
+				</section>
+		
+				<section class="main__manifest">
+					<div class="manifest">
+						<div class="manifest__wrap manifest-img">
+							<img src="img/main/manifest.jpg" srcset="img/main/manifest.jpg 1x, img/main/manifest@2x.jpg 2x, img/main/manifest@3x.jpg 3x" alt="Manifest" class="manifest-img__image">
+							<button class="manifest-img__title js-manifest-btn">Манифест</button>
+						</div>
+						<div class="manifest__hidden-block js-manifest-hidden">
+							<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес. Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес. Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
+						</div>
+					</div>
+				</section>
+		
+				<section class="main__programs">
+					<div class="programs">
+						<div class="programs__wrap image-wrap">
+							<img src="img/days/main.jpg" srcset="img/days/main.jpg 1x, img/days/main@2x.jpg 2x, img/days/main@3x.jpg 3x" alt="Manifest" class="image-wrap__img">
+							<h2 class="image-wrap__title">Программа</h2>
+						</div>
+						<div class="programs__slider slider">
+							<div class="slider__item">
+								<h2 class="slider__programs-date">20 ноября</h2>
+								<div class="programs-card">
+									<h4 class="programs-card__title">День 1</h4>
+									<div class="programs-card__block-photos">
+										<div class="programs-card__prew">
+											<img src="img/days/day-1-1.jpg" alt="" class="programs-card__img">
+											<span class="programs-card__name">Нагиев</span>
+										</div>
+										<div class="programs-card__prew">
+											<img src="img/days/day-1-2.jpg" alt="" class="programs-card__img">
+											<span class="programs-card__name">Леван горозия</span>
+										</div>
+									</div>
+									<div class="programs-card__content">
+										<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
+									</div>
+									<button class="programs-card__more-info btn-small js-tgl-program">Подробнее</button>
+								</div>
+							</div>
+							<div class="slider__item">
+								<h2 class="slider__programs-date">21 ноября</h2>
+								<div class="programs-card">
+									<h4 class="programs-card__title">День 2</h4>
+									<div class="programs-card__block-photos">
+										<div class="programs-card__prew">
+											<img src="img/days/day-1-1.jpg" alt="" class="programs-card__img">
+											<span class="programs-card__name">Нагиев</span>
+										</div>
+										<div class="programs-card__prew">
+											<img src="img/days/day-1-2.jpg" alt="" class="programs-card__img">
+											<span class="programs-card__name">Леван горозия</span>
+										</div>
+									</div>
+									<div class="programs-card__content">
+										<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
+									</div>
+									<button class="programs-card__more-info btn-small js-tgl-program">Подробнее</button>
+								</div>
+							</div>
+							<div class="slider__item">
+								<h2 class="slider__programs-date">22 ноября</h2>
+								<div class="programs-card">
+									<h4 class="programs-card__title">День 3</h4>
+									<div class="programs-card__block-photos">
+										<div class="programs-card__prew">
+											<img src="img/days/day-1-1.jpg" alt="" class="programs-card__img">
+											<span class="programs-card__name">Нагиев</span>
+										</div>
+										<div class="programs-card__prew">
+											<img src="img/days/day-1-2.jpg" alt="" class="programs-card__img">
+											<span class="programs-card__name">Леван горозия</span>
+										</div>
+									</div>
+									<div class="programs-card__content">
+										<p>Как отмечает Майкл Мескон, медиавес основан на тщательном анализе. Сегментация рынка подсознательно позиционирует институциональный медиабизнес.</p>
+									</div>
+									<button class="programs-card__more-info btn-small js-tgl-program">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+		
+				<section class="main__location">
+					<div class="location">
+						<div class="location__wrap image-wrap">
+							<img src="img/contacts/main.jpg" alt="Location" class="image-wrap__img">
+							<h2 class="image-wrap__title">Локация</h2>
+						</div>
+						<div class="location__locality locality">
+							<div class="locality__child">
+								<img src="img/contacts/map-adress.svg" alt="" class="locality__svg">
+								<address class="locality__addr">г. Москва, улица Мосфильмовская</address>
+							</div>
+							<div class="locality__child">
+								<img src="img/contacts/map-house.svg" alt="" class="locality__svg">
+								<address class="locality__addr">Дом 8</address>
+							</div>
+							<div class="locality__child">
+								<img src="img/contacts/map-place.svg" alt="" class="locality__svg">
+								<address class="locality__addr">Панорамная площадка Panoramic</address>
+							</div>
+						</div>
+					</div>
+					<div class="location__map" id="map"></div>
+				</section>
+		
+			</main>
+		
+			<footer class="footer">
+				<div class="footer__soc">
+					<a href="/" target="_blank" class="footer__soc-link">
+						<img src="img/contacts/fb.svg" alt="">
+					</a>
+					<a href="/" target="_blank" class="footer__soc-link">
+						<img src="img/contacts/insta.svg" alt="">
+					</a>
+				</div>
+				<div class="footer__block-links">
+					<a href="/" class="footer__site" target="_blank">remymartin.com</a>
+					<a href="/" class="footer__privacy-policy">Политика хранения и обработки персональных данных</a>
+				</div>
+			</footer>
 		</div>
-	</footer>
 
+	</div>
 
-	<form action="#" class="popup popup-program">
+	<form action="#" class="popup popup_transparence popup-program">
 		<h2 class="popup-program__title">Программа</h2>
 		<h4 class="popup-program__subtitle">День 1</h4>
 		<button type="button" class="popup-program__chouse-day btn btn_fill">Выбрать день</button>
@@ -222,7 +293,7 @@
 					<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 				</div>
 			</div>
-			<h2 class="popup-lk__plus">+1</h2>
+			<!-- <h2 class="popup-lk__plus">+1</h2>
 			<div class="popup-lk__registr-row">
 				<div class="formfield popup-lk__input-name">
 					<input class="formfield__input" name="guest[name]" type="text" placeholder="Фамилия и имя" value="">
@@ -233,8 +304,9 @@
 				<div class="formfield popup-lk__input-tel">
 					<input class="formfield__input" name="guest[tel]" type="tel" placeholder="+_ (__) ___ __ __" value="">
 				</div>
-			</div>
+			</div> -->
 			<button type="button" class="popup-lk__add btn btn_border">Добавить +1</button>
+			<!-- <button type="button" class="popup-lk__add btn btn_border">Удалить</button> -->
 		</div>
 		<div class="popup-lk__bottom">
 			<h3 class="popup-lk__notification">Вы идете на день 1</h3>
@@ -246,26 +318,10 @@
 		</div>
 	</form>
 
-	<div class="popup popup_fill-bg popup_sb">
+	<div class="popup popup_sb">
 		<img src="img/form-confirm-logo.svg" alt="" class="popup__logo">
 		<h2 class="popup__confirm">форма отправлена</h2>
 		<button class="btn btn_border">закрыть</button>
-	</div>
-
-	<div class="popup popup-age popup_fill-bg popup_sb display visible">
-		<img src="img/logo-1.png" alt="Remy Martin" alt="" class="popup-age__logo">
-		<div class="popup-age__btn-block">
-			<h4 class="popup-age__title">Подтвердите, что вам больше 18, чтобы продолжить</h4>
-			<button class="popup-age__btn btn btn_fill">Да, мне больше 18</button>
-			<button class="popup-age__btn btn btn_border">Нет, мне еще нет 18</button>
-		</div>
-	</div>
-
-	<div class="notice">
-		<span class="notice__text">Для завершения регистрации нужно выбрать один из дней</span>
-		<button class="notice__close">
-			<img src="" alt="">
-		</button>
 	</div>
 
 </body>
