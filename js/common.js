@@ -35,9 +35,16 @@ $(function () {
 			$('.regitstration__wrap').toggleClass('display');
 		}, 300);
 		setTimeout(function () {
-			$('.regitstration__title').addClass('regitstration__title_visible');
+			$('.regitstration__title').toggleClass('regitstration__title_visible');
 			$('.regitstration__wrap_2').removeClass('regitstration__wrap_transform-start');
 		}, 600);
+	});
+
+	$('.js-confirm').on('click', function() {
+		$('.regitstration__desc').addClass('display');
+		setTimeout(function () {
+			$('.regitstration__desc').addClass('visible');
+		}, 300);
 	});
 
 	$('.js-reg').on('click', function() {

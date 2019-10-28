@@ -103,12 +103,21 @@ section {
 	transition: opacity .3s ease-in;
 }
 
-.regitstration__title_visible {
+.regitstration__title.display {
+	display: block;
+}
+
+.regitstration__title.visible {
 	opacity: 1;
 }
 
 .regitstration__title_last {
 	margin-top: 90px;
+}
+
+.regitstration__desc {
+	display: none;
+	opacity: 0;
 }
 
 .regitstration__desc p {
@@ -119,6 +128,14 @@ section {
 	line-height: 1.45;
 	text-align: center;
 	color: #fff;
+}
+
+.regitstration__desc.display {
+	display: block;
+}
+
+.regitstration__desc.visible {
+	opacity: 1;
 }
 
 .regitstration__wrap {
